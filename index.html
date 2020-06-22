@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" ng-app="MenuApp">
+  <head>
+    <title>No Cookies Cardiohealthy Asian Restaurant Incredibly Interactive Menu (NCCARIIM)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <h1 class="general__title text-align--center">No Cookies Cardiohealthy Asian Restaurant Incredibly Interactive Menu (NCCARIIM)</h1>
+    <h2 class="general__subtitle text-align--center">Easy selection at your service</h2>
+    <div class="view__wrapper">
+      <ui-view></ui-view>
+    </div>
+
+    <!-- Libraries -->
+    <script src="lib/jquery-3.1.0.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/menuApp/menuApp.module.js"></script>
+    <script src="src/data/data.module.js"></script>
+
+    <!-- Config -->
+    <script src="src/config/routes.js"></script>
+    <script src="src/config/constants.js"></script>
+
+    <!-- Controllers -->
+    <script src="src/categories/categories.component.js"></script>
+    <script src="src/categories/categories.controller.js"></script>
+    <script src="src/items/items.component.js"></script>
+    <script src="src/items/items.controller.js"></script>
+
+    <!-- Services -->
+    <script src="src/data/menuData.service.js"></script>
+  </body>
+</html>

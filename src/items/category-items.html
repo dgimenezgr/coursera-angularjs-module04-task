@@ -1,0 +1,10 @@
+<div class="items__item" ng-repeat="item in $ctrl.list">
+    <div class="items__header">
+        <h3 class="items__title">{{item.name}} <span class="pill">{{ item.short_name }}</span></h3>
+    </div>
+    <div class="items__body">
+        <div><strong>Description:</strong> {{ item.description }}</div>
+        <div><strong>Price (small portion):</strong> {{ item.price_small }}</div>
+        <div><strong>Price (large portion):</strong> {{ item.price_large }}</div>
+    </div>
+</div>
